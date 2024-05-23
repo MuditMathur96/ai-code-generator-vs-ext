@@ -1,0 +1,82 @@
+{
+  "name": "my-code-generator",
+  "displayName": "My Code Generator",
+  "description": "simple code generator using AI",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "aicgActivityBar",
+          "title": "AI Code Generator",
+          "icon": "media/ai-code-generator.svg"
+        }
+      ]
+    },
+    "views": {
+      "aicgActivityBar": [
+        {
+          "type": "webview",
+          "id": "myView",
+          "name": "AI Code Generator"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "aicg.selectModel",
+        "title": "Select Model"
+      },
+      {
+        "command": "aicg.alert",
+        "title": "Show Alert"
+      },
+      {
+        "command": "aicg.openInputBox",
+        "title": "Open Input Box"
+      },
+      {
+        "command": "aicg.start",
+        "title": "Open AI Coder"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "npm run check-types && npm run lint && node esbuild.js",
+    "watch": "npm-run-all -p watch:*",
+    "watch:esbuild": "node esbuild.js --watch",
+    "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+    "package": "npm run check-types && npm run lint && node esbuild.js --production",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.89.0",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.3.9",
+    "esbuild": "^0.20.2",
+    "eslint": "^8.57.0",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "ollama": "^0.5.1"
+  }
+}

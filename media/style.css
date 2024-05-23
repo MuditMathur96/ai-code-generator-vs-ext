@@ -1,0 +1,101 @@
+/* media/style.css */
+body{
+    padding:5px 5px;
+   
+}
+
+.container{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 5px ;
+    
+}
+
+
+textarea {
+   
+    width: 95%;
+    height: 200px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #d4d4d4; /* Light gray text color */
+    background-color: #1e1e1e; /* Dark background color */
+    border: 1px solid #3c3c3c; /* Dark border color */
+    border-radius: 4px;
+    resize: vertical; /* Allow vertical resize only */
+    box-shadow: none;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #007acc; /* Blue border on focus to match VS Code's accent color */
+    box-shadow: 0 0 5px rgba(0, 122, 204, 0.5); /* Subtle blue shadow on focus */
+}
+
+/* media/style.css */
+select {
+    width: 100%;
+    
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #d4d4d4; /* Light gray text color */
+    background-color: #1e1e1e; /* Dark background color */
+    border: 1px solid #3c3c3c; /* Dark border color */
+    border-radius: 4px;
+    box-shadow: none;
+    outline: none;
+    appearance: none; /* Remove default styling */
+    -webkit-appearance: none; /* Remove default styling for WebKit browsers */
+    -moz-appearance: none; /* Remove default styling for Mozilla browsers */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23d4d4d4" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+}
+
+select:focus {
+    border-color: #007acc; /* Blue border on focus to match VS Code's accent color */
+    box-shadow: 0 0 5px rgba(0, 122, 204, 0.5); /* Subtle blue shadow on focus */
+}
+
+/* media/style.css */
+button {
+    width: 100%;
+    background-color: #0e639c; /* VS Code's blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #1177bb; /* Slightly lighter blue for hover */
+    box-shadow: 0 0 5px rgba(0, 122, 204, 0.5); /* Subtle blue shadow */
+}
+
+button:active {
+    background-color: #0a4b78; /* Slightly darker blue for active state */
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 122, 204, 0.5); /* Subtle blue shadow */
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #d4d4d4;
+    background-color: #1e1e1e;
+}
