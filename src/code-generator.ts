@@ -15,7 +15,7 @@ const fileTypes:Record<string,string>={
     ".schema":"sql",
     ".tsconfig":"typescript",
     ".json":"JSON"
-}
+};
 
 
 const generateCode= async(model:string,prompt:string)=>{
@@ -64,10 +64,6 @@ const generateCode= async(model:string,prompt:string)=>{
 await vscode.commands.executeCommand("editor.action.formatDocument");
 
 
-
-
-
-
-}
+};
 
 export default generateCode;

@@ -1,71 +1,57 @@
-# my-code-generator README
+# AI Code Generator Extension for Visual Studio Code
 
-This is the README for your extension "my-code-generator". After writing up a brief description, we recommend including the following sections.
+## Introduction
+
+Welcome to the AI Code Generator Extension for Visual Studio Code! This project is a labor of passion, created to leverage the power of AI to assist developers in generating code efficiently and accurately.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- AI-Powered Code Generation: Utilize cutting-edge AI models to generate code snippets, functions, and even entire classes based on your input.
+- Model Support: Currently supports the Ollama platform, with plans to integrate OpenAI APIs in the near future.
+- Supported Models:
+    * Phi 3 Mini (~2GB)
+    * Mistral 7b (~5GB) 
+- Cross platform
 
-For example if there is an image subfolder under your extension project workspace:
 
-\!\[feature X\]\(images/feature-x.png\)
+## Installation & Setup
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
-## Requirements
+To get started with the AI Code Generator Extension, follow these steps:
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. ### . Install Ollama and Pull Models
+    * For Phi 3 Mini:
+    ```bash
+        ollama pull phi-3-mini
+    ```
 
-## Extension Settings
+    * For Mistral 7b:
+    ```bash
+        ollama pull mistral-7b
+    ```
+2. ### Download and Install the Extension
+    Navigate to the master branch of this repository and download the latest .vsix file.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+3. ### Install the Extension:
 
-For example:
+* Open Visual Studio Code.
+* Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing Ctrl+Shift+X.
+* Click on the ... (three dots) at the top-right corner of the Extensions view, then choose Install from VSIX....
+* Browse to the downloaded .vsix file and select it to install.
 
-This extension contributes the following settings:
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
 
-## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+    
 
-## Release Notes
 
-Users appreciate release notes as you update your extension.
 
-### 1.0.0
+## Future Plans
 
-Initial release of ...
+While the current version supports the Ollama platform, I am actively working on integrating support for OpenAI APIs to enhance the functionality and provide more options for our users.
 
-### 1.0.1
 
-Fixed issue #.
+## License
 
-### 1.1.0
+[MIT](https://choosealicense.com/licenses/mit/)
 
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
