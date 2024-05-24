@@ -4,6 +4,16 @@
 
 Welcome to the AI Code Generator Extension for Visual Studio Code! This project is a labor of passion, created to leverage the power of AI to assist developers in generating code efficiently and accurately.
 
+## Demo
+<img
+src="https://res.cloudinary.com/muditdev/image/upload/v1716575262/gzi8dzxenoni23wenpud.gif"
+alt="AI Code Generator Demo - Hello World"
+ />
+
+<img
+src="https://res.cloudinary.com/muditdev/image/upload/v1716575258/qujdjbwyejkx4m86hhb0.gif"
+alt="AI Code Generator Demo - Product Class"
+ />
 ## Features
 
 - AI-Powered Code Generation: Utilize cutting-edge AI models to generate code snippets, functions, and even entire classes based on your input.
